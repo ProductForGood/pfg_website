@@ -10,6 +10,7 @@ namespace :data_migration do
       attributes = {
         name: row['Name']
       }
+      puts row['Name']
 
       bio = {}
       row.headers.each do |header|
