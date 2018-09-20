@@ -29,6 +29,7 @@ BlockLength:
   Exclude:
     - "spec/**/*"
     - "app/admin/**/*"
+    - "lib/tasks/**/*"
 
 MultilineMethodCallIndentation:
   Exclude:

@@ -36,3 +36,5 @@ zeus.json
 
 # Node
 node_modules/*
+
+db/data/private
