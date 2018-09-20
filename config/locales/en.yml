@@ -1,0 +1,13 @@
+---
+en:
+  date:
+    formats:
+      default: "%m/%d/%Y"
+      with_weekday: "%a %m/%d/%y"
+  time:
+    formats:
+      date: "%b %-d, %Y"
+      default: "%a, %b %-d, %Y at %r"
+      short: "%B %d"
+  titles:
+    application: Pfg website
