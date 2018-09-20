@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-git_source(:github) { |_repo| 'https://github.com/#{repo}.git' }
+git_source(:github) { |_repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 gem 'rails', '~> 5.2.1'
@@ -26,7 +26,6 @@ gem 'uglifier', '~> 4.1.19'
 group :development do
   gem 'better_errors', '~> 2.5.0'
   gem 'binding_of_caller', '~> 0.8.0'
-  gem 'overcommit', '~> 0.46.0'
   gem 'spring', '~> 2.0.2'
   gem 'spring-commands-rspec', '~> 1.0.4'
 end
