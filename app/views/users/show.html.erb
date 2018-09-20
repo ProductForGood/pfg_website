@@ -1,0 +1,25 @@
+<h1><%= @user.name %></h1>
+
+<dl>
+  <dt>Role<dt>
+  <dd><%= @user.bio['What role are you interested in?']  %></dd>
+  <dt>Location<dt>
+  <dd><%= @user.bio['Where do you live (general regions like westside, downtown, OC, etc.)? We use this info to form the teams.']  %></dd>
+
+<% @user.bio.each do |field| %>
+  <%
+    skip_fields = [
+      'Q&A Session',
+      'Do you meet the prerequisites listed in the Q&A?',
+      'Name',
+      'What role are you interested in?',
+      'How did you hear about Product for Good?',
+      'Where do you live (general regions like westside, downtown, OC, etc.)? We use this info to form the teams.'
+    ]
+    next if skip_fields.include?(field.first)
+  %>
+
+  <dt><%= field.first %></dt>
+  <dd><%= field.second %></dd>
+<% end %>
+</dl>

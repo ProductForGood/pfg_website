@@ -1,0 +1,17 @@
+<h1>Teams</h1>
+
+<ul>
+<% @teams.each do |team| %>
+  <li><%= team.name %></li>
+  <li>
+    <ul>
+      <% team.members.each do |user| %>
+        <li>
+          <%= link_to user.name, team_user_path(team_id: team.id, id: user.id) %>: <%= user.bio['What role are you interested in?'] %>,
+          <%= user.bio['Where do you live (general regions like westside, downtown, OC, etc.)? We use this info to form the teams.'] %>,
+          <%= user.bio['How much work experience do you have in your desired role?'] %>
+        </li>
+      <% end %>
+    </ul>
+<% end %>
+</ul>
