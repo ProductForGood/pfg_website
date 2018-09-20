@@ -10,6 +10,7 @@ gem 'airbrake', '~> 7.3.5', require: false
 gem 'autoprefixer-rails', '~> 9.1.4'
 gem 'bootsnap', '~> 1.3.2', require: false
 gem 'bundler'
+gem 'devise'
 gem 'flutie', '~> 2.0.0'
 gem 'i18n-tasks', '~> 0.9.25'
 gem 'newrelic_rpm', '~> 5.4.0.347'
